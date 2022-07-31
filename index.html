@@ -6,9 +6,51 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <main>ASCII Art</main>
+    <p>ASCII Art</p>
+    <div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+    </div>
+    <!-- <form> -->
+    <p>Color options</p>
+    <input
+      type="radio"
+      id="greyscale"
+      name="colorrange"
+      value="GREYSCALE"
+      checked
+    />
+    <label for="greyscale">Grey scale</label><br />
+    <input type="radio" id="color" name="colorrange" value="COLOR" />
+    <label for="colorrange">Color</label><br />
+    <p>Color mode</p>
+    <input
+      type="radio"
+      id="forward"
+      name="invertcolors"
+      value="forward"
+      checked
+    />
+    <label for="greyscale">Normal</label><br />
+    <input type="radio" id="backward" name="invertcolors" value="backward" />
+    <label for="colorrange">Inverted</label><br />
+    </p>
+    <label for="size">Choose a size</label>
+    <select id="size" name="size" width="128">
+      <option default value="32">32x32</option>
+      <option value="64">64x64</option>
+      <option value="128">128x128</option>
+      <option value="256">256x256</option>
+    </select>
+    </p>
+    <label for="blacklevel">Black level</label>
+    <input type="range" id="blacklevel" name="blacklevel" min="0" max="32" step="1" value="0" width="150"/>
+    </p>
     <input type="file" name="theFile" id="theFile" />
-    <button id="btn">Read & display</button>
+    <button id="btn">Generate</button>
+    <br />
+    <p>HTML code:</p>
+    <textarea id="htmlcode" name="htmlcode" rows="32" cols="256"></textarea>
+    <!-- </form> -->
     <script src="sketch.js"></script>
   </body>
 </html>

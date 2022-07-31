@@ -5,9 +5,14 @@ body {
   background-color: #000;
   color: #fff;
   font-family: "Courier";
-  font-size: 12pt;
+  font-size: 16pt;
   line-height: 10pt;
 }
 canvas {
   display: block;
+}
+
+textarea {
+  background-color: #000;
+  color: #fff;
 }
