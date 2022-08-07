@@ -53,7 +53,7 @@ function drawAsciiArt(graphics, forwardDensity, useColor, blacklevel) {
         : Math.floor(map(avg, 0, 255, len, 0));
       const c = useDensity.charAt(charIndex);
       useColor ? graphics.fill(r, g, b) : graphics.fill(avg);
-      graphics.textSize(16);
+      // graphics.textSize(16);
       graphics.textAlign(CENTER, CENTER);
       graphics.text(c, i * w + w * 0.5, j * h + h * 0.5);
     }
